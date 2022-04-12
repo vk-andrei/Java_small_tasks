@@ -2,42 +2,42 @@
 // in the first array and y be any string in the second array.
 // Find max(abs(length(x) − length(y)))    If a1 and/or a2 are empty return -1
 public class Task_013_Max_Length_Diff {
+
+    public static String[] max_min_StringInArray (String[] anyString) {
+        String max_anyString = anyString[0];
+        String min_anyString = anyString[0];
+        for (int i = 1; i < anyString.length; i++) {
+            if (anyString[i].length() > max_anyString.length()) {
+                max_anyString = anyString[i];
+                }
+        }
+        for (int i = 1; i < anyString.length; i++) {
+            if (anyString[i].length() < min_anyString.length()) {
+                min_anyString = anyString[i];
+            }
+        }
+        // System.out.println("Max string is: " + max_anyString);
+        // System.out.println("Min string is: " + min_anyString);
+        String[] arr = new String[] {max_anyString, min_anyString};
+        return arr;
+    }
+
     public static void main(String[] args) {
 
-        String[] s1 = new String[] {"12345678", "1234", "12", "123456789"};
-        String[] s2 = new String[] {"456", "1111", "1"};
-        // answer = 8 - 1 = 7
+        String[] s1 = new String[]{"12345678", "1234", "12", "123456789"};
+        String[] s2 = new String[]{"456", "1111", "1"};
 
+        String[] s1_maxMin = max_min_StringInArray(s1);
+        String[] s2_maxMin = max_min_StringInArray(s2);
 
-        String max_s1 = s1[0];
-        int max_s1_index = 0;
+        int diff1 = Math.abs(s1_maxMin[0].length() - s2_maxMin[1].length());
+        int diff2 = Math.abs(s2_maxMin[0].length() - s1_maxMin[1].length());
 
-        for (int i = 1; i < s1.length; i++) {
-            if (s1[i].length() > s1[i - 1].length()) {
-                max_s1 = s1[i];
-                max_s1_index = i;
-            }
-        }
+        // System.out.println("diff1 = " + diff1);
+        // System.out.println("diff2 = " + diff2);
 
-        System.out.println("Max string in s1: " + max_s1);
-        System.out.println("Max index in s1: " + max_s1_index);
-
-        String max_s2 = s2[0];
-        int max_s2_index = 0;
-
-        for (int i = 1; i < s2.length; i++) {
-            if (s2[i].length() > s2[i - 1].length()) {
-                max_s2 = s2[i];
-                max_s2_index = i;
-            }
-        }
-
-        System.out.println("Max string in s1: " + max_s2);
-        System.out.println("Max index in s1: " + max_s2_index);
-
-
-
-
+        System.out.println("MAX LENGTH: " + (diff1 > diff2 ? diff1 : diff2));
+        // System.out.println("MAX LENGTH: " + (Math.max(diff1, diff2)));
     }
 
 }
