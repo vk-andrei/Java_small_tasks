@@ -1,6 +1,6 @@
 import java.util.Scanner;
 // Угадай число от 0 до 10, 20, 30
-public class Task_0011_Guess_number {
+public class Task_011_Guess_number {
 
     private static final Scanner SCAN = new Scanner(System.in);
 

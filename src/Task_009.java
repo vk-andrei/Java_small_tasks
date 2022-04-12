@@ -3,7 +3,7 @@
 // максимальна. Если таких строк несколько, вывести индекс последней из них.
 
 import java.util.Arrays;
-public class Task_0009 {
+public class Task_009 {
     public static void main(String[] args) {
 
         int[][] myArr = new int[12][8];
