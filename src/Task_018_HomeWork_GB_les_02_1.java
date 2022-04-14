@@ -40,4 +40,3 @@ public class Task_018_HomeWork_GB_les_02_1 {
         return anyArr;
     }
 }
-
