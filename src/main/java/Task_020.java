@@ -1,5 +1,3 @@
-import org.w3c.dom.ls.LSOutput;
-
 //An ATM has banknotes of nominal values 10, 20, 50, 100, 200 and 500 dollars. You can consider that there is a large
 // enough supply of each of these banknotes. You have to write the ATM's function that determines the minimal number
 // of banknotes needed to honor a withdrawal of n dollars, with 1 <= n <= 1500.
@@ -20,7 +18,7 @@ public class Task_020 {
         }
         return n == 0 ? q : -1;
     }
-
+/*
     private static int solve1(int n) {
         int d1 = n / 500;
         int d2 = (n - d1 * 500) / 200;
@@ -40,5 +38,5 @@ public class Task_020 {
         System.out.println("10: " + d6);
 
         return d1 + d2 + d3 + d4 + d5 + d6;
-    }
+    }*/
 }
