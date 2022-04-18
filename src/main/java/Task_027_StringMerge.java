@@ -11,6 +11,8 @@ public class Task_027_StringMerge {
     }
 
     private static String stringMerge(String str1, String str2, char l) {
+        // IN ONE STRING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        return str1.substring(0, str1.indexOf(l)) + str2.substring(str2.indexOf(l));
 
         //   MY SOLUTION
    /*     char[] s1 = str1.toCharArray();
@@ -29,11 +31,6 @@ public class Task_027_StringMerge {
         for (int i = index1 + 1; i < s2.length; i++) {
             str.append(s2[i]);
         }
-
         return str.toString();*/
-
-        // IN ONE STRING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-        return str1.substring(0,str1.indexOf(l)) + str2.substring(str2.indexOf(l));
     }
 }
