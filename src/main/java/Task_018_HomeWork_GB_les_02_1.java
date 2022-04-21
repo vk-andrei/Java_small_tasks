@@ -3,11 +3,11 @@ import java.util.Arrays;
 public class Task_018_HomeWork_GB_les_02_1 {
     public static void main(String[] args) {
                                  //0   1   2   3
-        int[] myArray = new int[] {10, 20, 30, 40};     //     40 10 20 30
+        int[] myArray = new int[] {10, 20, 30, 40, 50};     //     40 10 20 30
         System.out.println(Arrays.toString(myArray));
         System.out.println("----PROCESS----");
-        int n = -3;
-        int[] changedArray = moveArray(myArray, n);;
+        int n = 512;
+        int[] changedArray = moveArray(myArray, n);
         System.out.println("-----RESULT----");
         System.out.println(Arrays.toString(changedArray));
     }
