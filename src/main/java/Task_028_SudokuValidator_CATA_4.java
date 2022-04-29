@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Task_028_SudokuValidator {
+public class Task_028_SudokuValidator_CATA_4 {
 
     final public static int SUD_SIZE = 9;
 
